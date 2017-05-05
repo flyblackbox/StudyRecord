@@ -1,0 +1,1286 @@
+/* Javascript Study Sessions---------
+-------------------------------------
+//xX.xX.xX xXM - xXM (x * 25 minutes)
+
+Helpful Links {
+  Noun Icon Repo: https://thenounproject.com/accounts/pricing/,
+  Visualize Code Execution: http://pythontutor.com/javascript.html,
+  JSBin: http://jsbin.com/juyobagiji/edit?js,console,
+  Gitter Dev Chat: https://gitter.im/,
+  Visualize Data with JS: http://www.highcharts.com/,
+  Install Slack: https://slack.com/downloads/instructions/osx,
+  TypeForm: https://admin.typeform.com/,
+  Eloquent Javascript Next Chapter: http://eloquentjavascript.net/02_program_structure.html,
+  Rethinking Javascript The if Statement: https://hackernoon.com/rethinking-javascript-the-if-statement-b158a61cd6cb#.cky99lj1g,
+  Underscorejs Library: underscorejs.org,
+  JSON Prettify: http://jsonprettyprint.com/,
+  Node.js Dzone RefCard: https://dzone.com/refcardz/nodejs,
+  Git - Getting Started Dzone RefCard: https://dzone.com/refcardz/getting-started-git,
+  React.js Essentials Dzone RefCard: https://dzone.com/refcardz/reactjs-essentials,
+  Functional Programming in JavaScript Dzone RefCard: https://dzone.com/refcardz/functional-programming-with-javascript,
+  Core JSON Dzone RefCard: https://dzone.com/refcardz/core-json,
+  MongoDB Flexible NoSQL for Humongous Data Dzone RefCard: https://dzone.com/refcardz/mongodb,
+  Introduction to HTTP Dzone RefCard: https://dzone.com/refcardz/http-hypertext-transfer-0,
+  Machine Learning Patterns for Predictive Analytics Dzone RefCard: https://dzone.com/refcardz/machine-learning-predictive,
+  Core CSS: Part I Dzone RefCard: https://dzone.com/refcardz/corecss-part1,
+  Big Data Processing Dzone Guide: https://dzone.com/guides/big-data-processing,
+  Web Development: Applications and Frameworks Dzone Guide: https://dzone.com/guides/web-development-applications-and-frameworks
+  CSS, HTML, JS version detector: https://modernizr.com/,
+  Onboarding Critique: https://www.useronboard.com/onboarding-teardowns/,
+  jQuery Cheat Sheet: https://oscarotero.com/jquery/,
+  Yarn Cheat SheeT: https://infinite.red/files/yarn.pdf,
+  Yarn Helpful Links: https://shift.infinite.red/npm-vs-yarn-cheat-sheet-8755b092e5cc,
+  Google JS Style Guide: https://google.github.io/styleguide/jsguide.html,
+  Setting Up React Locally: https://www.codecademy.com/articles/react-setup-i,
+  Sketch Plugin Directory: http://sketch.land/,
+}
+
+
+
+
+
+To-Review {
+  Get HTTP Protocol Request: https://www.youtube.com/watch?v=l473EQSkZqc,
+  Matt's HHSB Code: https://jsfiddle.net/pixelsauce/5auzoqrh/,
+  10 Best Web Dev Channels: https://www.thebalance.com/the-10-best-web-development-youtube-channels-2071397,
+  Install Slack Roulette: http://slackroulette.com/signup,
+  Classical Inheritance in JavaScript: http://www.crockford.com/javascript/inheritance.html,
+  Land tech job with no connections: https://medium.freecodecamp.com/how-you-can-land-a-6-figure-job-in-tech-with-no-connections-6eed0de26ea4#.nusrewx21,
+  Unlock mysteries of programming: https://medium.freecodecamp.com/rosetta-code-unlocking-the-mysteries-of-the-programming-languages-that-power-our-world-300b787d8401#.twufi187n,
+  Javascript Jems - Lambda Expressions: http://www.i-programmer.info/programming/javascript/1031-javascript-jems-lambda-expressions.html,
+  Eloquent Javascript - Higher Order Functions: http://eloquentjavascript.net/05_higher_order.html,
+  Higher-Order Functions in Javascript: https://www.sitepoint.com/higher-order-functions-javascript/,
+  You Don't Know JS: Scope & Closures: https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20%26%20closures/ch3.md,
+  Nodeschool Workshops: https://nodeschool.io/#workshoppers,
+  A Beginner’s Guide to Currying in Functional JavaScript: https://www.sitepoint.com/currying-in-functional-javascript/,
+  http://stackoverflow.com/questions/16383795/difference-between-module-exports-and-exports-in-the-commonjs-module-system,
+  https://blog.risingstack.com/node-js-at-scale-module-system-commonjs-require/,
+  http://fredkschott.com/post/2014/03/understanding-error-first-callbacks-in-node-js/,
+  https://blog.risingstack.com/node-hero-node-js-debugging-tutorial/,
+  https://nodejs.org/api/debugger.html,
+  https://www.google.com/search?q=Node.js+debugger&ie=utf-8&oe=utf-8#q=Node.js+debugger&tbm=vid&*
+  http://stackoverflow.com/questions/1911015/how-do-i-debug-node-js-applications,
+  https://blog.risingstack.com/node-js-at-scale-module-system-commonjs-require/,
+  https://coverr.co/,
+  Why does javascript suck: https://whydoesitsuck.com/why-does-javascript-suck/,
+  Javascript sucks because: https://wiki.theory.org/YourLanguageSucks#JavaScript_sucks_because,
+  Stop Being Cute and Clever: http://lucumr.pocoo.org/2013/12/9/stop-being-clever/,
+  Why JavaScript is a toy language: http://www.davidarno.org/2010/05/18/why-javascript-is-a-toy-language/,
+  James Mickens on Javascript: https://youtu.be/D5xh0ZIEUOE,
+  Must Watch JS Videos: https://github.com/bolshchikov/js-must-watch,
+  ECMA Script 6
+  Javascript Basics: https://github.com/voxsim/knowledge/tree/master/programming-languages/javascript,
+  JavaScript Promises, an Introduction: https://developers.google.com/web/fundamentals/getting-started/primers/promises,
+  Beginner's Guide to JavaScript promises: http://www.javascriptkit.com/javatutors/javascriptpromises.shtml,
+  NodeJS Tutorial: https://www.airpair.com/javascript/node-js-tutorial,
+  JavaScript Promises: https://classroom.udacity.com/courses/ud898/lessons/5972243496/concepts/59521068840923#,
+  Zsh Vs Bash: https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH,
+  Basics of Emmet: https://www.sitepoint.com/faster-workflow-mastering-emmet-part-1/,
+  https://facebook.github.io/react/docs/forms.html,
+  https://facebook.github.io/react/docs/events.html,
+  https://facebook.github.io/react/docs/conditional-rendering,
+  Scope in JS: http://www.digital-web.com/articles/scope_in_javascript/,
+  Container Components: https://medium.com/@learnreact/container-components-c0e67432e005,
+  High Performance Components with Containers: https://www.youtube.com/watch?v=KYzlpRvWZ6c&t=1351,
+  Socket.IO: https://socket.io/docs/#,
+  NPM Intro: https://www.sitepoint.com/beginners-guide-node-package-manager/#managingdependencies
+  Generators FFF: https://www.youtube.com/watch?v=ategZqxHkz4
+  Stream Javascript Versatile Tool: https://blog.codecentric.de/en/2014/05/streams-javascript-versatile-tool/
+  Stream FTW: https://jakearchibald.com/2016/streams-ftw/
+  Stream Functional JS: http://blog.jeremyfairbank.com/javascript/functional-javascript-streams-2/
+  Stream Handbook: https://github.com/substack/stream-handbook
+  Official Stream Documentation: https://nodejs.org/api/stream.html
+}
+
+Questions {
+  Module Pattern: What is it? https://frontendmasters.com/courses/js-fundamentals-to-functional/#v=did85vfg6j&skip=1,
+  Too many arguments?: https://screencast.com/t/7dcYahyG3g,
+  Private methods?: http://www.crockford.com/javascript/private.html
+}
+
+
+/* Javascript Study Sessions---------
+-------------------------------------
+
+Projects to Complete {
+  iteration3 needed from Stevie
+  Slack N Podio: https://github.com/Rafase282/SlackNPodio,
+  Hip Hop Score Board: https://github.com/flyblackbox/HHSB,
+  Ai Offer Filter: Product Manager, Developer: Wizeline,
+  GroupMe Analytics app
+  GroupMe Chatbot: https://www.npmjs.com/package/groupme
+  Alexa / Adobe Analytics integration:  https://gomix.com/#!/project/alexa-skill
+  StudySessionToMindMap: Take the data below from my study sessions and convert them into a mind map,
+  Ropeit Pro
+  CodeMunk Challenges: https://www.hackerearth.com/practice/codemonk/,
+}
+
+Next to Review: Regex, Async, NPM/webpack/gulp/grunt (pros/cons)
+
+
+--------------------------------
+5.2.17  7:30AM - 8:30PM (1 * 25min)
+
+Krishna {
+  Determine how to calculate user score
+  Determine how to build voting pop up with React
+  Investigate Spotify API: https://developer.spotify.com/web-api/endpoint-reference/,
+}
+
+
+Louis {
+  To Study
+  React Studio
+  Express
+}
+
+
+--------------------------------
+5.1.17  7:30PM - PM (1 * 25min)
+
+Sketch {
+  Switch To Sketch by InVision: https://www.switchtosketchapp.com/switch-to-sketch
+  No. 4 Beyond The Basics
+  No. 5 Symbols and Styles
+  No. 6 Workflow Pro Tips
+  No. 7 A Faster Way to Certainty
+  No. 8
+}
+
+HHSB {
+  Mockups:
+  User Profile
+  User Account Page
+  Artist Profile
+}
+
+
+
+
+
+--------------------------------
+4.30.17  12:30PM - 2:30PM (4 * 25min)
+         3PM - 4PM Screen Share With Stevie Jay
+         5:30PM - 6:30PM (2 * 25)
+Stevie {
+  Streams: Producer/Consumer Problem
+}
+
+
+JavaScript {
+  Yield: *https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield,
+  New: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new,
+  Promises FFF: https://www.youtube.com/watch?v=2d7s3spWAzo
+  Node JS Stream Intro: https://www.youtube.com/watch?v=GpGTYp_G9VE,
+}
+
+Sketch {
+  Switch To Sketch by InVision: https://www.switchtosketchapp.com/switch-to-sketch
+  No. 1 Why Sketch:
+  No. 2 Document Setup:
+  No. 3 Design Basics:
+}
+
+
+--------------------------------
+4.29.17   6PM - 7PM (2 * 25min)
+          9PM - 10PM (2 * 25min)
+
+Sketch {
+  Learn Sketch Megumi 1: http://megumi.co/learn/sketch1.htm,
+  Learn Sketch Megumi 2: http://megumi.co/learn/sketch2.htm,
+  Learn Sketch Megumi 3: http://megumi.co/learn/sketch3.htm,
+  Sketch Icon Tutorial: https://medium.com/google-design/sketch-tutorial_01-b76271a095e3,
+}
+
+
+
+React {
+  What's Lifecycle Method: https://www.codecademy.com/en/courses/react-102/lessons/mounting-lifecycle-methods/exercises/whats-lifecycle-method
+  componentWillReceiveProps: https://www.codecademy.com/courses/react-102/lessons/updating-unmounting-lifecycle-methods/exercises/componentwillreceiveprops,
+  shouldComponentUpdate: https://www.codecademy.com/courses/react-102/lessons/updating-unmounting-lifecycle-methods/exercises/shouldcomponentupdate,
+  componentWillUpdate: https://www.codecademy.com/courses/react-102/lessons/updating-unmounting-lifecycle-methods/exercises/componentwillupdate,
+  componentDidUpdate: https://www.codecademy.com/courses/react-102/lessons/updating-unmounting-lifecycle-methods/exercises/componentdidupdate,
+  componentWillUnmount: https://www.codecademy.com/courses/react-102/lessons/updating-unmounting-lifecycle-methods/exercises/componentwillunmount,
+  Lifecycle Methods Recap: https://www.codecademy.com/courses/react-102/lessons/updating-unmounting-lifecycle-methods/exercises/lifecycle-methods-recap,
+}
+
+--------------------------------
+4.28.17   10PM - 12PM Screen Share With Rafael Rodriguez
+
+Git {
+  Git review
+  Installed hub
+  What does this do? remote add upstream git@github.com:Rafase282/SlackNPodio.git
+  git pull-request -m
+  Updated bash file with git aliases
+  Setup Hub Bash Aliases: https://stackoverflow.com/questions/8967843/how-do-i-create-a-bash-alias
+  Using Pico: https://apple.stackexchange.com/questions/25844/can-i-open-files-in-textedit-from-the-terminal-in-mac-os-x
+}
+
+
+--------------------------------
+4.27.17   5PM - 7PM (4 * 25)
+          7PM - 7:30 Screen Share With Casmir Patterson (Hip Hop Artist)
+
+Brave Browser {
+  Basic Attention Token Whitepaper: https://basicattentiontoken.org/wp-content/uploads/2017/03/BasicAttentionTokenWhitePaper.pdf
+}
+
+Talked HHSB with Casmir
+Reviewed current state of product roadmap and discussed user desires.
+
+
+--------------------------------
+4.26.17   7AM - 8AM With Krishna Biradar (React Expert HHSB)
+
+Explain database schema
+Krishna Screen Share {
+  MongoDB
+  JSON.parse
+  JSON.stringify
+  beautify https://www.npmjs.com/package/json-beautify
+}
+
+
+--------------------------------
+4.25.17   8PM - 9PM (2 * 25)
+
+React {
+  Input Onchange: https://www.codecademy.com/courses/react-102/lessons/react-forms/exercises/input-onchange
+  Input Event Handler: https://www.codecademy.com/courses/react-102/lessons/react-forms/exercises/input-event-handler
+  Set Input Initial State: https://www.codecademy.com/courses/react-102/lessons/react-forms/exercises/set-input-initial-state
+  Update Input Value: https://www.codecademy.com/courses/react-102/lessons/react-forms/exercises/update-input-value
+  Controlled vs Uncontrolled: https://www.codecademy.com/courses/react-102/lessons/react-forms/exercises/controlled-vs-uncontrolled
+  Form Recap: https://www.codecademy.com/courses/react-102/lessons/react-forms/exercises/form-recap
+}
+
+--------------------------------
+4.24.17   8PM - 10PM (4 * 25)
+
+HHSB {
+  cardFlip Animation: http://codepen.io/flyblackbox/pen/LybRbe?editors=1010#0
+}
+
+--------------------------------
+4.23.17   7PM - 9PM (3 * 25min)
+          6PM - 7PM Screen Share with John Girifalco (Database Admin)
+
+
+Prepared Rough Draft Database Schema for HHSB:
+
+UserMaster:
+Email
+Username
+Password
+UserAvatar
+Points
+PrivateLabelPointsX
+
+UserDetails:
+UserID (sequentially generated ID)
+UserLoginDetail (dates)
+
+WordVote:
+PrimaryKey (UserID.Artist.SongName.Word.DateCreated)
+VoteType (up/down/neutral)
+UserID
+Artist
+SongName
+Word
+Status (public/provided)
+
+Artist:
+ArtistID
+ArtistName
+ArtistAvatar
+RecordLabel
+MainPoints
+FeaturePoints
+UpPoints
+DownPoints
+TotalPoints
+
+Word:
+ArtistID
+SongID
+WordString
+UpVote
+DownVote
+
+Song:
+Artist
+FeaturedArtist
+Album
+Lyrics (string)
+YearReleased
+
+
+--------------------------------
+4.22.17   8AM - AM Screen Share With Krishna Biradar (React Expert HHSB)
+          3PM - 3:30PM  (1 * 25min)
+
+  Lint
+  Beautify
+  Minify
+  Coding Standards/Conventions
+  Installed Linter
+  ZSH: https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH
+  Emmet: https://www.sitepoint.com/faster-workflow-mastering-emmet-part-1/
+
+  HHSB  {
+    Letter Flip Animation: http://codepen.io/flyblackbox/pen/LybRbe
+    PT Story: https://www.pivotaltracker.com/story/show/144151883,
+  }
+
+
+  Wait But Why: Neuralink: http://waitbutwhy.com/2017/04/neuralink.html,
+    Part 1: The Human Colossus http://waitbutwhy.com/2017/04/neuralink.html#part1,
+    Part 2: The Brain http://waitbutwhy.com/2017/04/neuralink.html#part2
+    Part 3: Brain-Machine Interfaces http://waitbutwhy.com/2017/04/neuralink.html#part3
+    Part 4: Neuralink’s Challenge http://waitbutwhy.com/2017/04/neuralink.html#part4
+    Part 5: The Wizard Era http://waitbutwhy.com/2017/04/neuralink.html#part5
+    Part 6: The Great Merger http://waitbutwhy.com/2017/04/neuralink.html#part6
+
+
+--------------------------------
+4.21.17  6PM - 7PM (2 * 25min)
+
+React {
+  Proptypes Intro: https://www.codecademy.com/en/courses/react-102/lessons/proptypes/exercises/proptypes-intro
+  Proptypes Apply: https://www.codecademy.com/courses/react-102/lessons/proptypes/exercises/proptypes-apply
+  Proptypes Add Properties: https://www.codecademy.com/courses/react-102/lessons/proptypes/exercises/proptypes-add-properties
+  Proptypes Stateless: https://www.codecademy.com/courses/react-102/lessons/proptypes/exercises/proptypes-stateless
+  Input Onchange: https://www.codecademy.com/courses/react-102/lessons/react-forms/exercises/input-onchange
+  Input Event Handler: https://www.codecademy.com/courses/react-102/lessons/react-forms/exercises/input-event-handler
+}
+
+--------------------------------
+4.20.17  6:30PM - 8:30PM Ehtereum Philadelphia Meetup
+
+  Installed Parity
+  Setup Coinbase Account
+  Installed MetaMask Chrome plugin: https://youtu.be/6Gf_kRE4MJU,
+  Found great blockchain blogger: https://medium.com/@simondlr,
+  Solidity In-Browser Dev Environment: https://ethereum.github.io/browser-solidity/,
+
+--------------------------------
+4.19.17  3:30PM - 4:30PM Screen Share with Rafael Rodríguez
+
+SlackNPodio {
+  Reviewed new yargs integration
+  Explained next steps to Nick
+}
+
+
+--------------------------------
+4.18.17  8PM - 9PM (2 * 25min)
+
+React {
+  Stateless Functional Component Intro: https://www.codecademy.com/en/courses/react-102/lessons/stateless-functional-components/exercises/stateless-functional-component-intro,
+  Stateless Functional Component Props: https://www.codecademy.com/courses/react-102/lessons/stateless-functional-components/exercises/stateless-functional-component-props,
+
+Videos {
+  Reactjs with ES6 Understanding Stateless functional Components: https://www.youtube.com/watch?v=Lr2YATD8eXU,
+  React For Everyone #16 - Functional Stateless Components: https://www.youtube.com/watch?v=Lx0AE-mhNlg,
+  [2017] React Tutorial for Beginners - Codepen.io: https://youtu.be/ZnRFerIP8aA
+}
+
+
+--------------------------------
+4.17.17  4PM - 5PM (2 * 25min)
+
+React {
+  Child Parent Define Handler: https://www.codecademy.com/courses/react-102/lessons/child-updates-parents-state/exercises/child-parent-define-handler,
+  Child Parent Pass Handler: https://www.codecademy.com/courses/react-102/lessons/child-updates-parents-state/exercises/child-parent-pass-handler,
+  Child Parent Receive Handler: https://www.codecademy.com/courses/react-102/lessons/child-updates-parents-state/exercises/child-parent-receive-handler,
+  Automatic Binding: https://www.codecademy.com/courses/react-102/lessons/child-updates-parents-state/exercises/automatic-binding,
+  Child Updates Sibling Intro: https://www.codecademy.com/en/courses/react-102/lessons/child-updates-sibling/exercises/child-updates-sibling-intro,
+  Siblings Display Change: https://www.codecademy.com/courses/react-102/lessons/child-updates-sibling/exercises/siblings-display-change,
+  Parent Pass Props Siblings: https://www.codecademy.com/courses/react-102/lessons/child-updates-sibling/exercises/parent-pass-props-siblings,
+  Sibling Displays Props: https://www.codecademy.com/courses/react-102/lessons/child-updates-sibling/exercises/sibling-displays-props,
+  Stateless Inherit Stateful Recap: https://www.codecademy.com/courses/react-102/lessons/child-updates-sibling/exercises/stateless-inherit-stateful-recap,
+  Inline Styles: https://www.codecademy.com/en/courses/react-102/lessons/style/exercises/inline-styles,
+  Style Object Variable: https://www.codecademy.com/courses/react-102/lessons/style/exercises/style-object-variable,
+  Style Name Syntax: https://www.codecademy.com/courses/react-102/lessons/style/exercises/style-name-syntax,
+  Style Value Syntax: https://www.codecademy.com/courses/react-102/lessons/style/exercises/style-value-syntax,
+  Styles Multiple Components: https://www.codecademy.com/courses/react-102/lessons/style/exercises/styles-multiple-components,
+  Container Presentational Components Intro: https://www.codecademy.com/en/courses/react-102/lessons/container-presentational-components/exercises/container-presentational-components-intro,
+  Container Presentational Components Apply: https://www.codecademy.com/courses/react-102/lessons/container-presentational-components/exercises/container-presentational-components-apply,
+  https://medium.com/@learnreact/container-components-c0e67432e005
+  Components in React: https://www.youtube.com/watch?v=KYzlpRvWZ6c&t=1351
+
+}
+
+
+--------------------------------
+4.16.17  Easter Sunday | 2PM - 3PM Screen Share With Stevie Jay
+          7PM - 9PM (4 * 25min)
+
+Videos {
+  Linux Filesystem Hierarchy /etc: https://youtu.be/FSxab6etkzg
+  "Everything is a file" in UNIX: https://youtu.be/dDwXnB6XeiA
+}
+
+HHSB {
+  Pivotal Tracker Update
+  HHSB Mock Up PSD:   https://drive.google.com/file/d/0Bwh0kJu_vYNrd245LVlnV0pCdVk/,
+  UI Flow Shorthand:  https://signalvnoise.com/posts/1926-a-shorthand-for-designing-ui-flows,
+
+}
+
+React {
+  Intro to React II: https://www.codecademy.com/courses/react-102/lessons/stateless-inherit-stateful-intro/exercises/intro-one-oh-two,
+  Stateless Inherit Stateful: https://www.codecademy.com/courses/react-102/lessons/stateless-inherit-stateful-intro/exercises/stateless-inherit-stateful,
+  Stateful Component Init: https://www.codecademy.com/courses/react-102/lessons/stateless-inherit-stateful-intro/exercises/stateful-component-init,
+  Stateless Component: https://www.codecademy.com/courses/react-102/lessons/stateless-inherit-stateful-intro/exercises/stateless-component,
+  Stateful Parent Component: https://www.codecademy.com/courses/react-102/lessons/stateless-inherit-stateful-intro/exercises/stateful-parent-component,
+  Don't Update Props Within Their Own Component: https://www.codecademy.com/courses/react-102/lessons/stateless-inherit-stateful-intro/exercises/dont-update-props
+}
+
+
+React {
+  Event Handler Component Class: https://www.codecademy.com/courses/react-101/lessons/this-props/exercises/event-handler-component-class
+  Event Handler Pass Prop: https://www.codecademy.com/courses/react-101/lessons/this-props/exercises/event-handler-pass-prop
+  Receive Event Handler Prop: https://www.codecademy.com/courses/react-101/lessons/this-props/exercises/receive-event-handler-prop
+  Handle Event On Event Props Event: https://www.codecademy.com/courses/react-101/lessons/this-props/exercises/handleevent-onevent-props-event
+  This Props Children: https://www.codecademy.com/courses/react-101/lessons/this-props/exercises/this-props-children,
+  Get Default Props: https://www.codecademy.com/courses/react-101/lessons/this-props/exercises/getdefaultprops,
+  props Recap: https://www.codecademy.com/courses/react-101/lessons/this-props/exercises/props-recap
+  Get Initial State: https://www.codecademy.com/courses/react-101/lessons/this-state/exercises/getinitialstate
+  Access Component State: https://www.codecademy.com/courses/react-101/lessons/this-state/exercises/access-component-state,
+  Call setState Another Function: https://www.codecademy.com/courses/react-101/lessons/this-state/exercises/call-setstate-another-function,
+  This setState Automatic Render: https://www.codecademy.com/courses/react-101/lessons/this-state/exercises/this-setstate-automatic-render,
+
+}
+
+--------------------------------
+4.15.17   8AM - 9 AM Screen Share With Krishna Biradar
+          12:30PM - 1:30PM (2 * 25 min)
+
+HHSB {
+  Updated Pivotal Tracker: ,
+}
+
+React {
+  Component in Render Function: https://www.codecademy.com/courses/react-101/lessons/components-render-each-other/exercises/component-in-render-function
+  Component in Render Function Apply: https://www.codecademy.com/courses/react-101/lessons/components-render-each-other/exercises/component-in-render-function-apply
+  Require Files: https://www.codecademy.com/courses/react-101/lessons/components-render-each-other/exercises/require-files,
+  Module Exports: https://www.codecademy.com/courses/react-101/lessons/components-render-each-other/exercises/module-exports,
+  Component Render Action: https://www.codecademy.com/courses/react-101/lessons/components-render-each-other/exercises/component-render-action,
+  This Dot Props: https://www.codecademy.com/en/courses/react-101/lessons/this-props/exercises/this-props-intro,
+  Pass Props Component: https://www.codecademy.com/courses/react-101/lessons/this-props/exercises/pass-props-component,
+  Pass Props Inter Component: https://www.codecademy.com/courses/react-101/lessons/this-props/exercises/pass-props-inter-component,
+  Render UI Based Props: https://www.codecademy.com/courses/react-101/lessons/this-props/exercises/render-ui-based-props,
+}
+
+--------------------------------
+4.14.17 10PM - 11PM (2 * 25 min)
+
+React {
+  Render Multiline JSX: https://www.codecademy.com/en/courses/react-101/lessons/react-components-advanced-jsx/exercises/render-multiline-jsx,
+  Component Variable Attributes: https://www.codecademy.com/courses/react-101/lessons/react-components-advanced-jsx/exercises/component-variable-attribute,
+  Render Function Calculations: https://www.codecademy.com/courses/react-101/lessons/react-components-advanced-jsx/exercises/render-function-calculations
+  Render Function If Statement: https://www.codecademy.com/courses/react-101/lessons/react-components-advanced-jsx/exercises/render-function-if-statement
+  Components And This: https://www.codecademy.com/courses/react-101/lessons/react-components-advanced-jsx/exercises/components-and-this,
+  Component Event Listener: https://www.codecademy.com/courses/react-101/lessons/react-components-advanced-jsx/exercises/component-event-listener,
+  Components Recap:  https://www.codecademy.com/courses/react-101/lessons/react-components-advanced-jsx/exercises/components-recap
+}
+
+React {
+  Conditional Rendering: https://facebook.github.io/react/docs/conditional-rendering.html
+}
+
+--------------------------------
+4.13.17 7PM - 8:30PM (3 * 25 min)
+
+React {
+  Import ReactDOM: https://www.codecademy.com/courses/react-101/lessons/your-first-react-component/exercises/import-reactdom,
+  Component Class: https://www.codecademy.com/courses/react-101/lessons/your-first-react-component/exercises/component-class,
+  Component Class Name: https://www.codecademy.com/courses/react-101/lessons/your-first-react-component/exercises/component-class-name,
+  Component Class Instructions: https://www.codecademy.com/courses/react-101/lessons/your-first-react-component/exercises/component-class-instructions,
+  Render Function: https://www.codecademy.com/courses/react-101/lessons/your-first-react-component/exercises/render-function,,
+  Component Instructions Function: https://www.codecademy.com/courses/react-101/lessons/your-first-react-component/exercises/component-instructions-function,
+  Create Component Instance: https://www.codecademy.com/courses/react-101/lessons/your-first-react-component/exercises/create-component-instance,
+  Render React Component: https://www.codecademy.com/courses/react-101/lessons/your-first-react-component/exercises/render-react-component,
+}
+
+--------------------------------
+4.12.17 7:30AM - 8:30AM Screen Share With Krishna Biradar
+        6:30PM - 8:30PM Screen Share with Rafael Rodríguez
+
+Krishna {
+  Emmet Shortcuts
+  jQuery Cheat Sheet: https://oscarotero.com/jquery/
+  Socket.io
+  Npm ws
+}
+
+
+
+Rafael {
+  yargs: https://github.com/yargs/yargs,
+  parse args: https://github.com/yargs/yargs/#parseargs-context-parsecallback
+  }
+
+--------------------------------
+4.11.17 6:30PM - 9PM NodeJS Meetup @ Zivtech
+
+Meetup {
+  Presented SlackNPodio / PodioBot to NodeJS Meetup group.
+
+}
+
+--------------------------------
+4.10.17 6:30PM - 9PM (25 * 5)
+
+Videos {
+  React in 15ish minutes (1 of 3): https://youtu.be/PGUMRVowdv8?t=14m23s,
+}
+
+CodeCademy React {
+  Hello World Component: https://www.codecademy.com/en/courses/react-101/lessons/your-first-react-component/exercises/hello-world-component,
+  Import React: https://www.codecademy.com/courses/react-101/lessons/your-first-react-component/exercises/import-react,
+  Import ReactDOM:  https://www.codecademy.com/courses/react-101/lessons/your-first-react-component/exercises/import-reactdom,
+}
+
+Articles {
+  NodeJS Module Export: https://www.sitepoint.com/understanding-module-exports-exports-node-js/,
+}
+
+SlackNPodio {
+  Search In App: https://developers.podio.com/doc/search/search-in-app-4234651,
+  Get Files: https://developers.podio.com/doc/files/get-files-4497983,
+  Get Views: https://developers.podio.com/doc/views/get-views-27460,
+  Get View: https://developers.podio.com/doc/views/get-view-27450,
+}
+
+--------------------------------
+4.9.17 6PM - 7:30PM (25 * 3)
+
+Articles {
+  For vs Declarative: https://forum.freecodecamp.com/t/is-the-for-command-used-often-by-professional-developers/102302/11
+  Event Target: https://developer.mozilla.org/en-US/docs/Web/API/Event/target
+}
+
+React {
+  JSX Variable Attributes: https://www.codecademy.com/courses/react-101/lessons/react-jsx-advanced/exercises/jsx-variable-attributes,
+  JSX Event Listners: https://www.codecademy.com/courses/react-101/lessons/react-jsx-advanced/exercises/jsx-event-listeners,
+  JSX Conditionals Invalid If: https://www.codecademy.com/courses/react-101/lessons/react-jsx-advanced/exercises/jsx-conditionals-invalid-if,
+  JSX Conditionals valid If: https://www.codecademy.com/courses/react-101/lessons/react-jsx-advanced/exercises/jsx-conditionals-valid-if,
+  JSX Conditionals Ternary: https://www.codecademy.com/courses/react-101/lessons/react-jsx-advanced/exercises/jsx-conditionals-ternary,
+  JSX Map: https://www.codecademy.com/courses/react-101/lessons/react-jsx-advanced/exercises/jsx-map,
+  JSX Keys: https://www.codecademy.com/courses/react-101/lessons/react-jsx-advanced/exercises/jsx-keys,
+  React Create Element: https://www.codecademy.com/courses/react-101/lessons/react-jsx-advanced/exercises/react-createelement,
+}
+
+--------------------------------
+4.8.17 10:30PM - 11:30PM (25 * 2) Screenshare with Krishna Biradar
+
+HHSB {
+  Created droplet on Digital Ocean
+  Droplet Name: HHSB
+  IP Address: 198.211.96.92
+  Username: root
+  Assigned first work: Setup server, Lyrics page, vote up, vote down, add/subtract score.
+}
+
+--------------------------------
+4.7.17 5:30PM - 7PM (25 * 1)
+
+React {
+  JSX Variables https://www.codecademy.com/courses/react-101/lessons/react-jsx-advanced/exercises/jsx-variables,
+  JSX Variable Attributes: https://www.codecademy.com/en/courses/react-101/lessons/react-jsx-advanced/exercises/jsx-variable-attributes,
+}
+
+--------------------------------
+4.6.17 5:30PM - 7PM (25 * 2)
+
+
+React {
+  Attributes in JSX: https://www.codecademy.com/courses/react-101/lessons/react-jsx-intro/exercises/attributes-in-jsx
+  Nested JSX: https://www.codecademy.com/courses/react-101/lessons/react-jsx-intro/exercises/nested-jsx
+  JSX Outer Elements: https://www.codecademy.com/courses/react-101/lessons/react-jsx-intro/exercises/jsx-outer-elements,
+  Render JSX: https://www.codecademy.com/courses/react-101/lessons/react-jsx-intro/exercises/render-jsx,
+  ReactDom Render i: https://www.codecademy.com/courses/react-101/lessons/react-jsx-intro/exercises/reactdom-render-i,
+  ReactDom Render ii: https://www.codecademy.com/courses/react-101/lessons/react-jsx-intro/exercises/reactdom-render-ii,
+  ReactDOM Render Variable: https://www.codecademy.com/courses/react-101/lessons/react-jsx-intro/exercises/reactdom-render-variable,
+  Virtual DOM: https://www.codecademy.com/courses/react-101/lessons/react-jsx-intro/exercises/virtual-dom,
+  JSX Variable Attributes: https://www.codecademy.com/en/courses/react-101/lessons/react-jsx-advanced/exercises/jsx-variable-attributes,
+  JSX className Class: https://www.codecademy.com/courses/react-101/lessons/react-jsx-advanced/exercises/jsx-classname-class
+  Self Closing Tags: https://www.codecademy.com/courses/react-101/lessons/react-jsx-advanced/exercises/self-closing-tags
+  JSX Injection: https://www.codecademy.com/courses/react-101/lessons/react-jsx-advanced/exercises/javascript-jsx-injection-intro,
+  JSX Curly Braces: https://www.codecademy.com/courses/react-101/lessons/react-jsx-advanced/exercises/jsx-curly-braces,
+  JSX Pi 20 Digits: https://www.codecademy.com/courses/react-101/lessons/react-jsx-advanced/exercises/jsx-pi-20-digits
+}
+
+
+--------------------------------
+4.5.17 5:30PM - 7PM (25 * 1)
+
+HHSB {
+  CSS Card & Box Flip
+  3D Transforms in CSS: https://desandro.github.io/3dtransforms/,
+  Cube Show Sides: https://desandro.github.io/3dtransforms/examples/cube-02-show-sides.html,
+  Rectangle Prism: https://desandro.github.io/3dtransforms/docs/rectangular-prism.html,
+  CSS Tricks Transform: https://css-tricks.com/almanac/properties/t/transform/
+
+
+}
+
+--------------------------------
+4.4.17 5:30PM - 7PM (25 * 1)
+
+React {
+  FEM v2 Bholt
+  Get Initial State and Set State: https://frontendmasters.com/courses/complete-intro-react/getinitialstate-and-setstate,
+  Filtering https://frontendmasters.com/courses/complete-intro-react/filtering,
+}
+
+--------------------------------
+4.3.17 5:30PM - 7PM (25 * 3)
+React {
+  FEM v2 Bholt
+  Creating the Showcard Component: https://frontendmasters.com/courses/complete-intro-react/creating-the-showcard-component,
+  Key Prop: https://frontendmasters.com/courses/complete-intro-react/key-prop,
+  Prop Types: https://frontendmasters.com/courses/complete-intro-react/proptypes,
+  Using the Spread Operator in JSX: https://frontendmasters.com/courses/complete-intro-react/using-the-spread-operator-in-jsx,
+  Managing State: https://frontendmasters.com/courses/complete-intro-react/managing-state,
+}
+
+
+--------------------------------
+4.2.17 6PM - 8:30PM (25 * 4)
+
+React {
+  FEM v2 Bholt
+  Routing in React: https://frontendmasters.com/courses/complete-intro-react/routing-in-react,
+  HashRouter Configuration: https://frontendmasters.com/courses/complete-intro-react/hashrouter-configuration,
+  Creating the Search Page Route: https://frontendmasters.com/courses/complete-intro-react/creating-the-search-page-route,
+  Loading JSON Files: https://frontendmasters.com/courses/complete-intro-react/creating-the-search-page-route,
+  Iterating Through Data: https://frontendmasters.com/courses/complete-intro-react/iterating-through-data,
+}
+
+React {
+  CodeCademy React Courses: https://www.codecademy.com/courses/react-101/lessons/react-jsx-intro/exercises/why-react,
+  React Virtual Dom:  https://www.codecademy.com/articles/react-virtual-dom,
+  Virtual Dom vs Dom: http://reactkungfu.com/2015/10/the-difference-between-virtual-dom-and-dom/,
+}
+
+
+
+--------------------------------
+4.1.17 9:30PM - 10:30PM (25 * 2)
+
+React {
+  FEM v2 Bholt
+  Lint Rules for React: https://frontendmasters.com/courses/complete-intro-react/lint-rules-for-react,
+  Automated Linting: https://frontendmasters.com/courses/complete-intro-react/automated-linting,
+  Webpack Development Server: https://frontendmasters.com/courses/complete-intro-react/webpack-development-server,
+}
+
+--------------------------------
+3.31.17 8:30PM - 9:30PM (25 * 2)
+
+React v2 FEM {
+  JSX: https://frontendmasters.com/courses/complete-intro-react/jsx/
+  JSX 7:40: "Outer set means javascript expression, inner means javascript object"
+  JSX vs createElement: https://frontendmasters.com/courses/complete-intro-react/jsx-vs-createelement,
+  Configuring CSS Imports: https://frontendmasters.com/courses/complete-intro-react/configuring-css-imports,
+  Importing CSS in React: https://frontendmasters.com/courses/complete-intro-react/importing-css-in-react,
+}
+
+
+--------------------------------
+3.26.17 4:30PM - 7:30PM (25 * 4) (1 hour * Screenshare with Rafael Rodríguez)
+
+GroupMe Bot{
+  Setup Heroku account,
+  GroupMe NodeJS Callback Bot:  https://github.com/batorobe/bot-tutorial-nodejs-rMA32/blob/master/README.md,
+  GroupMe Chat Bot - Set up - Tutorial: https://forum.supercell.com/showthread.php/1225867-GroupMe-Chat-Bot-Set-up-Tutorials-Code-sharing-general-info-and-discussion
+
+}
+
+
+--------------------------------
+3.25.17 1PM - 2:30PM (25 min * 3)
+
+React v2 FEM {
+  Tooling Using Standard: https://frontendmasters.com/courses/complete-intro-react/#v=spakygnnr2&p=1.0001,
+  NPM Scripts: https://frontendmasters.com/courses/complete-intro-react/#v=a63cmb61p0&p=1.0003,
+  WebPack & ES6 Modules: https://frontendmasters.com/courses/complete-intro-react/#v=gp884u0ztv&p=1.0002m
+  Bundling with Webpack: https://frontendmasters.com/courses/complete-intro-react/#v=uhkkewp8xu&p=1.0001,
+  Babel Configuration: https://frontendmasters.com/courses/complete-intro-react/#v=it7tgjilio&p=1.0000,
+  Creating a webpack.config.js File: https://frontendmasters.com/courses/complete-intro-react/#v=wkvmc69i9y&p=1.0001,
+  Running Webpack from NPM: https://frontendmasters.com/courses/complete-intro-react/#v=zla1718no2&p=1.0002,
+  }
+
+FEM React v2 Notes {
+
+  What is Lint (such as Standard)?
+  Checks for code errors and alerts you in console or within Atom
+
+  What is Bash? Command Prompt Terminal, alternative Zsh
+
+  What is WebPack?
+  Module Bundler, takes all modules and puts them into one file (bundle.js)
+
+  What is a Polyfill?
+  "A lot of people try to replace Grunt and Gulp with their NPM scripts"
+  NPM Scripts 1:50
+
+
+
+
+  “Whatever this second part its just going to be piped into Bash for you, or whatever your shell is”
+  NPM Scripts :50
+  Scripts: {
+    “lint: “standard”
+}
+
+
+--------------------------------
+3.24.17 4PM - 5PM Screenshare with Rafael Rodríguez
+
+PodioNSlack {
+  Discovered Space search API requires alternate authorization
+  https://developers.podio.com/doc/spaces/get-space-by-url-22481
+  Spaces: Get space by URL: https://developers.podio.com/doc/search/search-in-space-22479
+}
+
+Ethereum {
+  Ethereum price and why Ethereum will be bigger than Bitcoin: https://youtu.be/FBc04MZZPqY,
+  YouTube Channel - CryptoPortfolio: https://www.youtube.com/channel/UCI9POyyP-f93JHfkhr2ma2g,
+}
+
+--------------------------------
+3.22.17 8:00PM - 9:30PM
+
+React v2 {
+  React Introduction: https://frontendmasters.com/courses/complete-intro-react/#v=vcv4hjw9zc&p=1,
+}
+
+
+--------------------------------
+3.20.17 8:30PM - 10PM Screenshare with Rafael Rodríguez
+
+PodioNSlack {
+  Filter Items By Title: https://stackoverflow.com/questions/42917179/filter-items-by-title-with-regex
+}
+
+
+--------------------------------
+3.17.17 3:30PM - 8:30PM Screenshare with Rafael Rodríguez
+
+PodioNSlack {
+  http://stackoverflow.com/questions/25369095/cannot-update-reference-app-field
+  http://stackoverflow.com/questions/40357075/how-to-update-a-field-with-a-new-value-using-the-rest-api
+  http://stackoverflow.com/questions/39626128/how-do-i-change-a-podio-category-field-using-put-and-json
+  Conceptualized product vision
+  Preparedd Readme: https://github.com/Rafase282/SlackNPodio/blob/master/README.md
+  https://developers.podio.com/doc/items/find-referenceable-items-22485
+  https://developers.podio.com/doc/filters
+}
+
+--------------------------------
+3.15.17 1PM - 6PM Screenshare with Rafael Rodríguez
+
+PodioNSlack {
+  Completed 'Get' functionality
+}
+
+--------------------------------
+3.12.17 1PM - 6PM (Girl Develop It Intro to JS - In Person Class) && 8PM - 10PM Screenshare with David Richied
+
+Lessons{
+  http://cfarm.github.io/gdi-intro-js/class2.html#/
+}
+
+Articles{
+  Comparison of Build Tools: https://survivejs.com/webpack/appendices/comparison/
+}
+
+
+
+--------------------------------
+3.11.17 1PM - 6PM (Girl Develop It Intro to JS - In Person Class)
+
+  Lessons{
+    http://cfarm.github.io/gdi-intro-js/class1.html#/
+  }
+
+  Articles {
+    Compare Package Managers: http://stackoverflow.com/questions/35062852/npm-vs-bower-vs-browserify-vs-gulp-vs-grunt-vs-webpack,
+    What is Node?: https://www.sitepoint.com/beginners-guide-node-package-manager/,
+  }
+
+Notes {
+  Flattened dependency?  Task runner automation?  Node Stream (pipe chains)? Hot reloading eliminates JS/CSS watchers.
+  gulp/grunt vs npm + plugins?
+  browserify vs node's require = actually AMD vs CommonJS
+  Bundle a module?
+  Webpack (not a task runner) processes files using loaders run directly from CLI or by a task runner
+}
+
+
+
+
+
+
+--------------------------------
+3.10.17 7PM - 8PM & 10PM - 1PM (2 * 25min) + Screen Share with Rafael Rodríguez
+
+  https://frontendmasters.com/courses/complete-intro-react/#v=etoq9czrhd&p=1.0001
+  https://btholt.github.io/complete-intro-to-react/all.html
+  http://memorise.org/memory-training/sherlock-mind-palace
+  improve memory palace
+  How to Use Anki Effectively: https://youtu.be/wlHNefImSe0
+  https://github.com/getify/You-Dont-Know-JS/blob/master/async%20%26%20performance/ch3.md
+  http://javascriptissexy.com/understand-javascripts-this-with-clarity-and-master-it/
+  http://mashable.com/2017/03/07/soylent-chat-bot-trish/?utm_campaign=Feed%3A+Mashable+%28Mashable%29&utm_cid=Mash-Prod-RSS-Feedburner-All-Partial&utm_source=feedburner&utm_medium=feed#OWRb5ipgJqqM
+  https://www.reddit.com/r/india/comments/2y5ajc/living_in_india_as_a_westerner_np/#bottom-comments
+
+--------------------------------
+3.9.17 7AM - 11PM (5 * 25min)
+Videos {
+  Too many tools and frameworks! FFF: https://www.youtube.com/watch?v=DFP6UDgVJtE,
+  Intro to React FEM: https://frontendmasters.com/courses/complete-intro-react/#v=vcv4hjw9zc&p=0.8858,
+  Yarn FEM: https://frontendmasters.com/courses/complete-intro-react/#v=c7fhfv2pma&p=1.0001,
+  Using Yarn FEM: https://frontendmasters.com/courses/complete-intro-react/#v=df5hghp2hh&p=1.0002,
+  Understanding React FEM: https://frontendmasters.com/courses/complete-intro-react/#v=gug06mjgla&p=1.0001,
+  My First Component FEM: https://frontendmasters.com/courses/complete-intro-react/#v=8ix6xu4pdc&p=1.0001,
+  createClass vs. createElement FEM: https://frontendmasters.com/courses/complete-intro-react/#v=etoq9czrhd&p=1.0001
+  My Second Component FEM: https://frontendmasters.com/courses/complete-intro-react/#v=jw4b7svnjf&p=1.0001,
+  Factories & Props FEM: https://frontendmasters.com/courses/complete-intro-react/#v=amc70qml48&p=1.0001,
+}
+
+Video Notes:
+  model => database
+  Views => client
+  controllers => talk between model and views
+
+  Finding a bug…
+  Where does the Javascript Live?
+	 Directive
+	 Controller
+	 Other directive
+	 Scope
+	 Template
+
+   Find element near bug
+   (Button click doesn’t work)
+   Check code near element
+   Code is right where interactive element is (??)
+
+   Emit? Html:5 (tab) in Sublime (1min in My First Component)
+
+   Write interface in react, have the browser, need glue in the middle- that’s react-dom (???)
+
+   Difference between React.DOM and ReactDOM?
+   Helper Methods, wrappers, create element calls
+
+   Components (tag, element) is a function call
+
+--------------------------------
+3.7.17 11AM - 5PM (5 * 25min)
+
+Articles {
+  The Three Worst Programming Languages: https://medium.com/smalltalk-talk/the-three-worst-programming-languages-b1ec25a232c1#.ffnafxn7h
+  JavaScript Closures w3c: https://www.w3schools.com/js/js_function_closures.asp
+}
+
+--------------------------------
+3.5.17 Airplane Home 11AM - 5PM (5 * 25min)
+
+Articles {
+  Handling Events: http://eloquentjavascript.net/14_event.html,
+  The Secret Life of Objects: http://eloquentjavascript.net/06_object.html,
+  How to Learn JavaScript Properly: http://javascriptissexy.com/how-to-learn-javascript-properly/,
+  JavaScript Objects in Detail: http://javascriptissexy.com/javascript-objects-in-detail/,
+  Understand JavaScript’s “this” With Clarity, and Master It: http://javascriptissexy.com/understand-javascripts-this-with-clarity-and-master-it/,
+  Too many tools and frameworks! FFF: https://www.youtube.com/watch?v=DFP6UDgVJtE
+}
+
+
+--------------------------------
+03.3.17 Mike's LA Apartment 1PM -PM (1 * 25 minutes)
+
+Reading {
+  You Don't Know JS- Async & Performance Chapter 3- Promises: https://github.com/getify/You-Dont-Know-JS/blob/master/async%20%26%20performance/ch3.md,
+}
+
+--------------------------------
+03.2.17 VR Playhouse Day Session 12:30PM - 3PM 4PM - 7PM (8 * 25 minutes)
+
+Documentation {
+  Slack Integrations: https://api.slack.com/custom-integrations,
+  Podio API: https://developers.podio.com/doc/items/get-item-22360,
+}
+
+Reading {
+  You Don't Know JS Chapter 1- Asynchrony- Now & Later: https://github.com/getify/You-Dont-Know-JS/blob/master/async%20%26%20performance/ch1.md,
+  Chapter 2- Callbacks: https://github.com/getify/You-Dont-Know-JS/blob/master/async%20%26%20performance/ch2.md
+}
+
+Videos {
+  Higher-order functions - Part 1 of Functional Programming in JavaScript https://youtu.be/BMUiFMZr7vk,
+  Currying - Part 6 of Functional Programming in JavaScript: https://youtu.be/iZLP4qOwY8I?t=5m54s,
+  Recursion - Part 7 of Functional Programming in JavaScript: https://youtu.be/k7-N8R0-KY4,
+  Promises - Part 8 of Functional Programming in JavaScript: https://youtu.be/2d7s3spWAzo,
+}
+
+Installed homebrew, NPM, SeanLouisPodio, slack-sdk, podio-js.
+
+Asynchronous code can be broken up into 'now' and 'later'
+Now code runs immediately upon execution.
+Later code runs after events occur.
+
+--------------------------------
+03.1.17 Silver Lake at Madison's 1PM - 4:30PM (5 * 25 minutes)
+
+Articles {
+  Private Members in JavaScript: http://www.crockford.com/javascript/private.html,
+}
+
+Videos {
+  Private Properties In JavaScript Objects in Hindi by vishAcademy: https://www.youtube.com/watch?v=gGQ0Voragw8
+  Object Oriented JavaScript Tutorial #3 How to create Public Members: https://youtu.be/2wEEYx4szDs,
+  Object Oriented JavaScript Tutorial #4 What is a closure & private members: https://www.youtube.com/watch?v=5AzipAJ_jYE,
+  Part 63 Abstract classes in JavaScript YouTube: https://www.youtube.com/watch?v=nlEms0Ctg1o#t=528.579047,
+  Are you bad, good, better or best with Async JS? JS Tutorial: Callbacks, Promises, Generators: https://www.youtube.com/watch?v=obaSQBBWZLk
+  Javascript Generators - THEY CHANGE EVERYTHING - ES6 Generators Harmony Generators: https://www.youtube.com/watch?v=QO07THdLWQo,
+  Generators in JavaScript - What, Why and How - FunFunFunction #34: https://youtu.be/ategZqxHkz4
+}
+
+--------------------------------
+02.28.17 1PM - 3:30PM (4 * 25 minutes)
+
+Videos {
+  javaScript promises explained tutorial: https://youtu.be/s6SH72uAn3Q,
+  Javascript Asynchronous Vs Synchronous: https://www.youtube.com/watch?v=jJM6o2EF54Y,
+  Understanding Asynchronous JavaScript: https://www.youtube.com/watch?v=vMfg0xGjcOI,
+  Asynchronous JavaScript #1 - What is Asynchronous JavaScript?: https://www.youtube.com/watch?v=YxWMxJONp7E,
+
+}
+
+Articles {
+  Understanding Synchronous and Asynchronous JavaScript – Part 1: http://www.hongkiat.com/blog/synchronous-asynchronous-javascript/,
+  Understanding Synchronous and Asynchronous JavaScript – Part 2: http://www.hongkiat.com/blog/synchronous-asynchronous-javascript-part2/
+  JavaScript for Beginners - Async: http://rowanmanning.com/posts/javascript-for-beginners-async/,
+  Concurrency model and Event Loop: https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop,
+}
+
+--------------------------------
+02.27.17 11:30AM - 2PM (4 * 25 minutes)
+
+Videos {
+  02 Exploring Async js async waterfall and async series YouTube: https://www.youtube.com/watch?v=E_0XtJEcve4,
+  What is Async JavaScript?: https://www.youtube.com/watch?v=y8xPMYwQ0U8,
+  JavaScript Promises: Thinking Sync in an Async World: https://www.youtube.com/watch?v=wc72cyYt8-c,
+  Node.js tutorial for Beginners: Node.js Async Made Easy: https://www.youtube.com/watch?v=ca7HAqbfd90,
+}
+
+--------------------------------
+02.25.17 9:30AM - 11AM (3 * 25 minutes)
+
+Articles {
+  Asynchronous vs synchronous SO.com: http://stackoverflow.com/questions/748175/asynchronous-vs-synchronous-execution-what-does-it-really-mean,
+  http://www.cs.unc.edu/~dewan/242/s04/notes/ipc/node11.html
+  http://stackoverflow.com/questions/864516/what-is-javascript-garbage-collection
+  The JavaScript Event Loop: Explained:  http://blog.carbonfive.com/2013/10/27/the-javascript-event-loop-explained/
+  Garbage Collection: http://docstore.mik.ua/orelly/webprog/jscript/ch11_03.htm,
+  Philip Roberts: What the heck is the event loop anyway?: http://2014.jsconf.eu/speakers/philip-roberts-what-the-heck-is-the-event-loop-anyway.html,
+}
+
+--------------------------------
+//02.24.17 11AM - 12PM (2 * 25 minutes)
+
+Lessons {
+  Sum All Numbers in a Range: https://www.freecodecamp.com/challenges/sum-all-numbers-in-a-range,
+  Mr Snow freeCodeCamp | Sum all Numbers in a Range: https://www.youtube.com/watch?v=gD3AFCZq6Ws,
+  Reduce MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce,
+}
+
+--------------------------------
+//02.21.17 10:30AM - 12PM (2 * 25 minutes)
+
+Articles {
+  Flexbox: https://medium.freecodecamp.com/even-more-about-how-flexbox-works-explained-in-big-colorful-animated-gifs-a5a74812b053#.v8iuv6b20,
+  The World's Most Misunderstood Programming Language: http://www.crockford.com/javascript/javascript.html,
+  Private Members in JavaScript: http://www.crockford.com/javascript/private.html,
+  Classical Inheritance in Javascript: http://www.crockford.com/javascript/inheritance.html,
+}
+
+--------------------------------
+//02.20.17 8PM - 10:30PM (25 minutes + Screenshare 90 minutes)
+
+ScreenShare with Sean Liley {
+  Podio Slack Integration: https://github.com/flyblackbox/SeanLouisPodio/,
+  Installed Node.js
+  Learned how to install NPM
+  Installed podio-js
+  Installed Slack SDK
+}
+
+Articles {
+TL;DR - Lambda means "function used as data https://gist.github.com/ericelliott/414be9be82128443f6df,
+}
+
+•	What is a lambda expression?
+  A function that is used as an argument or variable definition, that immediately returns data for that purpose.
+  Anonymous function != lamda expression always
+
+--------------------------------
+//02.19.17 3:30M - 6PM (Screenshare 120 minutes)
+
+ScreenShare with Sean Liley {
+  Podio Slack Integration: https://github.com/flyblackbox/SeanLouisPodio/invitations,
+  Installed Node.js
+  Learned how to install NPM
+  Installed podio-js
+  Installed Slack SDK
+}
+
+--------------------------------
+//02.18.17 11PM - 5PM (3 * 25 minutes + Screenshare 80 minutes)
+
+Articles {
+  JS Classes MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes,
+  Singleton Dofactory: http://www.dofactory.com/javascript/singleton-design-pattern,
+  *Singleton Design Pattern Rob Dodson: http://robdodson.me/javascript-design-patterns-singleton/,
+  IBM developerWorks User singletons wisely: http://www.ibm.com/developerworks/webservices/library/co-single/index.html,
+}
+
+Videos {
+  Fat Arrow Functions JavaScript Programming Tutorial : https://www.youtube.com/watch?v=J85lRtO_yjY,
+  Simple Lambda Expressions in JavaScript: https://www.youtube.com/watch?v=0UmtmAHb4KA,
+  Classes - JavaScript Advanced Tutorial 6: https://www.youtube.com/watch?v=cBzCrNo1whM
+  Singleton Dsgn Pattern packtpub.com: https://www.youtube.com/watch?v=x81qNYeBJc8,
+  JavaScript IIFE, Revealing Module Pattern - Singleton, Constructor: https://www.youtube.com/watch?v=jV2EzOzNZQI,
+}
+
+ScreenShare with Matt Bulfair {
+  User Stories for HHSB: https://www.pivotaltracker.com/n/projects/1579587,
+  Podio / Slack Integration Investigation:
+  Podio API: https://developers.podio.com/examples,
+  Slack API:Slack API: https://api.slack.com/,
+}
+
+Lessons {
+  Render Images from Data Sources UNFINISHED: https://www.freecodecamp.com/challenges/render-images-from-data-sources
+}
+
+--------------------------------
+//02.17.17 7PM - 10PM (3 * 25 minutes)
+
+Videos {
+  JavaScript object creation patterns tutorial: https://www.youtube.com/watch?v=xizFJHKHdHw,
+  Mastering JavaScript: Creating a Singleton | packtpub.com: https://www.youtube.com/watch?v=9pvlz-O6Sak,
+  The Constructor Pattern - OOP in Javascript #4: https://youtu.be/NMOM-OBS094,
+  Classes - JavaScript Advanced Tutorial 6: https://youtu.be/cBzCrNo1whM,
+}
+
+Articles {
+  Object.defineProperties(): https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperties,
+}
+
+--------------------------------
+//02.16.17 1:30PM - 2PM && 6PM - 8:30PM (4 * 25 minutes)
+
+Lessons {
+  Convert JSON Data to HTML FCC: https://www.freecodecamp.com/challenges/convert-json-data-to-html,
+  Render Images from Data Sources FCC: https://www.freecodecamp.com/challenges/render-images-from-data-sources,
+}
+
+Articles {
+  Object.keys Mozilla Dev: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys,
+}
+
+Videos{
+  Higher-order Functions FFF:https://youtu.be/BMUiFMZr7vk,
+  Map FFF: https://youtu.be/bCqtb-Z5YGQ,
+  Reduce FFF: https://youtu.be/Wl98eZpkp-c,
+  Reduce Advanced FFF: https://youtu.be/1DMolJ2FrNY,
+  Closure FFF: https://youtu.be/CQqwU2Ixu-U,
+  Currying FFF: https://youtu.be/iZLP4qOwY8I,
+}
+
+Need help understanding this code:
+<script>
+  $(document).ready(function() {
+    $("#getMessage").on("click", function() {
+      $.getJSON("/json/cats.json", function(json) {
+        var html = "";
+        // Only change code below this line.
+        json.forEach(function(val) {
+          var keys = Object.keys(val);
+          html += "<div class = 'cat'>";
+            keys.forEach(function(key) {
+              html += "<strong>" + key + "</strong>: " + val[key] + "<br>";
+            });
+          html += "</div><br>";
+        });
+        // Only change code above this line.
+        $(".message").html(html);
+      });
+    });
+  });
+</script>
+
+--------------------------------
+//2.15.17 5PM - 6PM (2 * 25 minutes)
+
+Videos {
+  Javascript Immediately Invoked Function Expression IIFE Tutorial: https://www.youtube.com/watch?v=eY7u388cvM4 ,
+}
+
+Articles {
+  Emulating Block Scope in JS: http://adripofjavascript.com/blog/drips/emulating-block-scope-in-javascript.html,
+}
+
+--------------------------------
+//2.14.17 5PM - 11PM (7 * 25 minutes)
+
+Articles {
+Master the JavaScript Interview: What is a Pure Function?: https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976#.4entfxj6z,
+What is a closure? StackOverflow: http://stackoverflow.com/questions/36636/what-is-a-closure,
+What is mutable state? StackOverflow: http://softwareengineering.stackexchange.com/questions/235558/what-is-state-mutable-state-and-immutable-state,
+Pure Functions in JavaScript: http://www.nicoespeon.com/en/2015/01/pure-functions-javascript/,
+How is almost everything in Javascript an object?: http://stackoverflow.com/questions/9108925/how-is-almost-everything-in-javascript-an-object,
+getJSON Doc: http://api.jquery.com/jquery.getjson/,
+}
+
+Videos {
+What is a pure function?: https://vimeo.com/160326750,
+05.15 - #40 - JavaScript - Everything Is An Object: https://www.youtube.com/watch?v=aF_ai66v4Bg,
+JSON and AJAX Tutorial With Real Examples: https://youtu.be/rJesac0_Ftw,
+Javascript Immediately Invoked Function Expression IIFE Tutorial: https://www.youtube.com/watch?v=eY7u388cvM4 ,
+}
+
+Lessons {
+Trigger Click Events with jQuery FCC: https://www.freecodecamp.com/challenges/trigger-click-events-with-jquery,
+Change Text with Click Events:
+https://www.freecodecamp.com/challenges/change-text-with-click-events,
+}
+
+•	What is a closure?
+  A closure is a function within another function that has access to the variables within it’s parent function’s scope as well as the global variables even when called outside the parent function.
+
+•	What is a pure function?
+  Always returns the same value for a given set of parameters.  Produces no side effects such as global variable updates.  Relies on no external mutable state.
+
+•	In Javascript, people frequently say everything is an object. Explain what this means
+  It means that most data in JS code can be used as an object.
+  Objects are parameter and value pairs which can be modified.
+  Strings/Numbers/Booleans are primitives (not objects) and are immutable (state cannot be modified).
+
+--------------------------------
+//2.13.17 5PM - 11PM (7 * 25 minutes)
+
+Lessons {
+  JavaScript is sexy call backs: http://javascriptissexy.com/understand-javascript-callback-functions-and-use-them/,
+  javascript callback functions tutorial: https://www.youtube.com/watch?v=pTbSfCT42_M,
+  Javascript is Sexy closures: http://javascriptissexy.com/understand-javascript-closures-with-ease/,
+  funfunfunction closures: https://www.youtube.com/watch?v=CQqwU2Ixu-U,
+  Mozilla closures: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures,
+  Ajax XMLHttpRequest: https://www.youtube.com/watch?v=Dtw6FxRZOEQ,
+  What is AJAX?: https://www.youtube.com/watch?v=3l13qGLTgNw.
+  Asynchronous JavaScript #2 - AJAX Requests: https://www.youtube.com/watch?v=h0ZUpPiV1ac,
+  Caesar's Cipher FCC: https://www.freecodecamp.com/challenges/caesars-cipher,
+  Caesar's Cipher Walkthrough: https://www.youtube.com/watch?v=eAe0Xo57AKM,
+
+}
+
+  Simple Callback:
+      var calc = function(num1, num2, callback){callback(num1,num2)}
+      var add = function(a, b){return a + b}
+      calc(1, 2, add); // 3
+
+--------------------------------
+//2.12.17 12PM - 5:30PM (5 * 25 minutes)
+
+Lessons {
+  Where Do I Belong FCC: https://www.freecodecamp.com/challenges/where-do-i-belong,
+  callbackExercises FEM: callbackExercises.md,
+  Underscore.js Videos FEM: https://frontendmasters.com/courses/js-fundamentals-to-functional/#v=xystbl149f&p=0.0189,
+  Underscore.js Project FEM:
+}
+
+--------------------------------
+//2.11.17 1PM - 7PM (9 * 25 minutes)
+
+Lessons {
+  Scale Project FEM: https://frontendmasters.com/courses/js-fundamentals-to-functional/#v=8wnsmht410&skip=1,
+  Closure Videos FEM: https://frontendmasters.com/courses/js-fundamentals-to-functional/#v=3wacgkqg29&p=1.0000,
+  Closure Project FEM: https://frontendmasters.com/courses/js-fundamentals-to-functional/#v=did85vfg6j&skip=1,
+}
+
+--------------------------------
+//2.10.17 11PM - 12:30PM (90 minutes)
+
+Lessons {
+  Seek and Destroy FCC: https://www.freecodecamp.com/challenges/seek-and-destroy
+  Javier Seek and Destroy Solution: https://www.youtube.com/watch?v=Gz9ECvouuR0,
+}
+
+--------------------------------
+//2.9.17 Bedroom Study | 8PM - 12PM (240 minutes)
+
+Lessons {
+  Falsy Bouncer Lesson FCC: https://www.freecodecamp.com/challenges/falsy-bouncer,
+  .filter: https://egghead.io/lessons/javascript-the-array-filter-method,
+  Number.isNaN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN,
+  First Completion: https://www.freecodecamp.com/challenges/falsy-bouncer,
+  Second Completion:
+}
+
+nodeJS {
+  Install NodeJS: http://blog.teamtreehouse.com/install-node-js-npm-mac,
+  Install Homebrew: http://brew.sh/,
+}
+
+//2.9.17 aiChatbotWorkshop SapientRazorfish | 9AM - 12PM (180 minutes)
+--------------------------------
+
+PodioChatbot {
+  Podio API: https://developers.podio.com/examples,
+  Podio API Get Item: https://developers.podio.com/doc/items/get-item-22360,
+}
+
+GroupMEChatbot {
+  GroupMe Bot NodeJS: https://github.com/groupme/bot-tutorial-nodejs#pull,
+  GroupMe General tutorial: https://dev.groupme.com/tutorials/bots,
+  Claudia.JS: https://github.com/claudiajs/claudia-bot-builder/blob/master/docs/API.md#groupme-setup,
+  Reddit Thread Help: https://www.reddit.com/r/node/comments/47hd9f/has_anyone_here_made_a_groupme_bot_or_really_any/,
+  Fancy GroupMe Bot: https://www.npmjs.com/package/fancy-groupme-bot,
+  api.ai GroupMe Bot: https://discuss.api.ai/t/groupme-bot/891,
+}
+
+aiPlatforms {
+  Microsoft: Azure Bot framework,
+  IBM: Watson,
+  Amazon: Alexa/Lex,
+  Google: Api.ai,
+  Facebook: Wit.ai,
+}
+
+--------------------------------
+//2.8.17 Hampton SOHO Study Session | 8:20PM - 11:40PM (150 minutes)
+
+Lessons {
+  Mutations Lesson FCC: https://www.freecodecamp.com/challenges/mutations,
+  Free Code Camp Mutations - YouTube: https://www.youtube.com/watch?v=Wvv01k3b4vc,
+  indexOf() and .some(): https://www.youtube.com/watch?v=33o7FrFyqPg,
+  toLowerCase: http://www.w3schools.com/jsref/jsref_tolowercase.asp,
+  .split: http://www.w3schools.com/jsref/jsref_split.asp,
+  Mutations Solution: https://www.freecodecamp.com/challenges/mutations,
+  Mutations Final Code: MutationsFCC.js
+}
+
+Setup Atom {
+  Javascript Evaluator Package: https://atom.io/packages/eval-javascript,
+  Atom Runner: https://github.com/lsegal/atom-runner,
+  Cannot Get Atom Runner to Work: https://discuss.atom.io/t/javascript-doesnt-run-properly/28298/6,
+  My Code Editor: Atom, Setup & Packages: https://www.youtube.com/watch?v=hPC6keUUiTA,
+  Running Programs With Atom: https://www.youtube.com/watch?v=QyVnWjZzGVY,
+}
