@@ -8,6 +8,13 @@ Helpful Links {
 
 }
 
+Youtube Channels {
+    Code With Chris: https://www.youtube.com/user/CodeWithChris/playlists
+    Kilo Loco: https://www.youtube.com/channel/UCv75sKQFFIenWHrprnrR9aA
+    Jared Davidson: https://www.youtube.com/user/Archetapp/videos
+    
+
+
 
 To-Review {
   https://codewithchris.com/learn-swift/
@@ -48,30 +55,59 @@ Next to Review {
 }
 
 --------------------------------
-2.29.20  2PM - 3PM (2 * 25m)
+2.29.20  2PM - 4PM (3 * 25m)
 
 CodeCademy Learn Swift(https://www.codecademy.com/learn/learn-swift) {
   Swift Intro: https://www.codecademy.com/courses/learn-swift/lessons/swift-hello-world/exercises/introduction
   Hello World: https://www.codecademy.com/courses/learn-swift/lessons/swift-hello-world/exercises/print
   Comments: https://www.codecademy.com/courses/learn-swift/lessons/swift-hello-world/exercises/comments
+
+    //A single line comment will comment out a single line and is denoted by two forward slashes // preceding it
+    //Print hello, world! in the console using the following syntax:
+    print("Hello, world!")
+
+    //😀
+    print("Codecademy")
+
+    /*
+    Multi-line comments like this
+    */
+    
+  Intro to Variables: https://www.codecademy.com/courses/learn-swift/lessons/swift-variables/exercises/introduction
+  Declare a Variable: https://www.codecademy.com/courses/learn-swift/lessons/swift-variables/exercises/declare
+  Arithmetic Operators: https://www.codecademy.com/courses/learn-swift/lessons/swift-variables/exercises/arithmetic
+  Compound Assignment Operators: https://www.codecademy.com/courses/learn-swift/lessons/swift-variables/exercises/compound-assignment-operators
+  Variable Types: https://www.codecademy.com/courses/learn-swift/lessons/swift-variables/exercises/type
+  String Interpolation: https://www.codecademy.com/courses/learn-swift/lessons/swift-variables/exercises/string-interpolation
+  
+    var interpolator = 17
+    print("Daniel Johnston made \(interpolator) studio albums.")
+
+Challenge Temperature: https://www.codecademy.com/courses/learn-swift/lessons/swift-variables/exercises/challenge-temperature
+  
+    Variables Constants: https://www.codecademy.com/courses/learn-swift/lessons/swift-variables/exercises/constants
+    var tempf: Double = 34
+    var tempc: Double
+    tempc = (tempf - 32) / 1.8
+    print("The temp is /(tempc) degrees Celsius")
+
+Challenge Body Mass Index: https://www.codecademy.com/courses/learn-swift/lessons/swift-variables/exercises/review
+    
+    var weight: Int = 185
+    var height: Int = 66
+    var bmi = weight * (height * height)
 }
 
-//A single line comment will comment out a single line and is denoted by two forward slashes // preceding it
-//Print hello, world! in the console using the following syntax:
-print("Hello, world!")
 
-//😀
-print("Codecademy")
-
-
-/*
-Multi-line comments like this
-*/
+Kilo Loco Videos {
+    How To Get The Most Out Of Tutorials As A Programmer: https://www.youtube.com/watch?v=BVgNs-uGOy4
+    Create a repository of code that builds upon itself as you complete tutorials one by one.
+}
 
 
 Up Next:
-CodeCademy Swift {
-  Intro to Variables: https://www.codecademy.com/courses/learn-swift/lessons/swift-variables/exercises/introduction
+CodeCademy Learn Swift(https://www.codecademy.com/learn/learn-swift) {
+    Introduction to Conditionals: https://www.codecademy.com/courses/learn-swift/lessons/swift-conditionals/exercises/intro-to-conditionals
 }
 
 --------------------------------
