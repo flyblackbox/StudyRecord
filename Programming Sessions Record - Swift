@@ -2,20 +2,28 @@
 -------------------------------------
 //xX.xX.xX xXM - xXM (x * 25 minutes)
 
+Projects to Complete {
+  App Login (with existing backend)
+  Chat Interface (send/receive messages from GraphQL)
+  Activity Feed & Profile Page
+  Content (Display text & comments from GraphQL)
+}
+
 Helpful Links {
     https://developer.apple.com/swift/resources/
     https://docs.swift.org/swift-book/GuidedTour/GuidedTour.html
 
 }
+Questions {
+  How do I setup the dev environment?
+}
+
 
 Youtube Channels {
     Code With Chris: https://www.youtube.com/user/CodeWithChris/playlists
     Kilo Loco: https://www.youtube.com/channel/UCv75sKQFFIenWHrprnrR9aA
     Jared Davidson: https://www.youtube.com/user/Archetapp/videos
     
-
-
-
 To-Review {
   https://codewithchris.com/learn-swift/
   https://learnappmaking.com/learn-swift-programming/
@@ -36,18 +44,6 @@ To-Review {
   https://apps.apple.com/app/xcode/id497799835
   https://www.apple.com/education/docs/develop-in-swift-curriculum-guide.pdf
   
-}
-
-Questions {
-  How do I setup the dev environment?
-}
-
-
-Projects to Complete {
-  App Login
-  Chat Interface
-  Activity Feed
-  Content Display Text & Comments
 }
 
 Next to Review {
@@ -96,8 +92,10 @@ Challenge Body Mass Index: https://www.codecademy.com/courses/learn-swift/lesson
     var weight: Int = 185
     var height: Int = 66
     var bmi = weight * (height * height)
+    
+  
 }
-
+    
 
 Kilo Loco Videos {
     How To Get The Most Out Of Tutorials As A Programmer: https://www.youtube.com/watch?v=BVgNs-uGOy4
@@ -105,19 +103,57 @@ Kilo Loco Videos {
 }
 
 
-Up Next:
-CodeCademy Learn Swift(https://www.codecademy.com/learn/learn-swift) {
-    Introduction to Conditionals: https://www.codecademy.com/courses/learn-swift/lessons/swift-conditionals/exercises/intro-to-conditionals
-}
 
 --------------------------------
-3.1.20  ##PM - ##PM (N * 25m)
+3.1.20  9:30AM - 11AM (3 * 25m)
 
 CodeCademy Learn Swift(https://www.codecademy.com/learn/learn-swift) {
-  X
-}
+    Introduction to Conditionals: https://www.codecademy.com/courses/learn-swift/lessons/swift-conditionals/exercises/intro-to-conditionals
+    If Statements: ttps://www.codecademy.com/courses/learn-swift/lessons/swift-conditionals/exercises/if-statement
+    Else Statements: https://www.codecademy.com/courses/learn-swift/lessons/swift-conditionals/exercises/else-statement
+    Comparison Operators: https://www.codecademy.com/courses/learn-swift/lessons/swift-conditionals/exercises/comparison-operators
+    Else If Statements: https://www.codecademy.com/courses/learn-swift/lessons/swift-conditionals/exercises/else-if-statements
+    Ternary Conditional Operator: https://www.codecademy.com/courses/learn-swift/lessons/swift-conditionals/exercises/ternary-conditional-operator
+    Switch Statement: https://www.codecademy.com/courses/learn-swift/lessons/swift-conditionals/exercises/switch-statement
+    Interval Matching: https://www.codecademy.com/courses/learn-swift/lessons/swift-conditionals/exercises/switch-interval-matching
+    Compound Cases: https://www.codecademy.com/courses/learn-swift/lessons/swift-conditionals/exercises/switch-compound-cases
+    where Clause: https://www.codecademy.com/courses/learn-swift/lessons/swift-conditionals/exercises/switch-where-clause
+    Introduction to Logical Operators: https://www.codecademy.com/courses/learn-swift/lessons/swift-logical-operators/exercises/intro-to-logical-operators
+    Logical AND Operator: https://www.codecademy.com/courses/learn-swift/lessons/swift-logical-operators/exercises/and-operator
+    Logical OR Operator: https://www.codecademy.com/courses/learn-swift/lessons/swift-logical-operators/exercises/or-operator
+    Logical NOT Operator: https://www.codecademy.com/courses/learn-swift/lessons/swift-logical-operators/exercises/not-operator
+    Combining Logical Operators: https://www.codecademy.com/courses/learn-swift/lessons/swift-logical-operators/exercises/combining-logical-operators
+    Controlling Order of Execution: https://www.codecademy.com/courses/learn-swift/lessons/swift-logical-operators/exercises/order-of-execution
+    Repeating Tasks: https://www.codecademy.com/courses/learn-swift/lessons/swift-loops/exercises/repeating-tasks
+    The for-in Loop: https://www.codecademy.com/courses/learn-swift/lessons/swift-loops/exercises/the-for-in-loop
+    The stride() Function: https://www.codecademy.com/courses/learn-swift/lessons/swift-loops/exercises/the-stride-function
+    Iterating Through Strings: https://www.codecademy.com/courses/learn-swift/lessons/swift-loops/exercises/iterating-through-strings
+    Using Underscore: https://www.codecademy.com/courses/learn-swift/lessons/swift-loops/exercises/using-underscore
+    The continue Keyword: https://www.codecademy.com/courses/learn-swift/lessons/swift-loops/exercises/the-continue-keyword
+    The break Keyword: https://www.codecademy.com/courses/learn-swift/lessons/swift-loops/exercises/the-break-keyword
+    While Loop: https://www.codecademy.com/courses/learn-swift/lessons/swift-loops/exercises/while-loop
+    Creating an Empty Array: https://www.codecademy.com/courses/learn-swift/lessons/swift-arrays/exercises/creating-an-empty-array
+    Creating an Array Literal: https://www.codecademy.com/courses/learn-swift/lessons/swift-arrays/exercises/creating-an-array-literal
+    Index: https://www.codecademy.com/courses/learn-swift/lessons/swift-arrays/exercises/index
+    .count Property: https://www.codecademy.com/courses/learn-swift/lessons/swift-arrays/exercises/count
+    .insert() and .remove() Methods: https://www.codecademy.com/courses/learn-swift/lessons/swift-arrays/exercises/insert-and-remove
+    Iterating Over an Array: https://www.codecademy.com/courses/learn-swift/lessons/swift-arrays/exercises/iterating-over-an-array
+   
+   
+    userIsLoggedin ? print("Welcome to Scoreboard.") : print("Please login.")
+    var correctPassword = false
+    var lessThanThreeTries = false
+    var accessThroughTouchID = true
+    var unlock: Bool
+    var userIsLoggedin = false
+    // Write your code below 🔒
+    unlock = false
 
-Up Next:
-CodeCademy Swift {
+
+    if correctPassword && lessThanThreeTries || accessThroughPassID {
+      userIsLoggedin = true
+    } else {
+      userIsLoggedin = false
+    }
 
 }
