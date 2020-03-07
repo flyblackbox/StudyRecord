@@ -12,17 +12,13 @@ Projects to Complete {
 Helpful Links {
     https://developer.apple.com/swift/resources/
     https://docs.swift.org/swift-book/GuidedTour/GuidedTour.html
-
 }
-Questions {
-  How do I setup the dev environment?
-}
-
 
 Youtube Channels {
     Code With Chris: https://www.youtube.com/user/CodeWithChris/playlists
     Kilo Loco: https://www.youtube.com/channel/UCv75sKQFFIenWHrprnrR9aA
     Jared Davidson: https://www.youtube.com/user/Archetapp/videos
+    }
     
 To-Review {
   https://codewithchris.com/learn-swift/
@@ -43,66 +39,50 @@ To-Review {
   https://developer.apple.com/swift/resources/
   https://apps.apple.com/app/xcode/id497799835
   https://www.apple.com/education/docs/develop-in-swift-curriculum-guide.pdf
-  
-}
+  }
 
 Next to Review {
   Official Apple Swift Guided Tour: https://docs.swift.org/swift-book/GuidedTour/GuidedTour.html
 }
+   
+--------------------------------
+3.7.20  8AM - 9AM (2 * 25m)
+
+!Had trouble with tying storyboard elements  to a view controller.
+
+
+Udemy iOS 13 Xcode 11 & Swift 5: https://www.udemy.com/course/how-to-make-an-iphone-app-course-xcode-11-swift-5-ios-13/{
+    Outlets & Errors
+    Buttons & Action
+    }
+
+Outlets are connections between storyboard and view controller; Representation of something frmo the storyboard
+Action is when that object does some thing when interacted with
 
 --------------------------------
-2.29.20  2PM - 4PM (3 * 25m)
+3.3.20  9PM - 10PM (2 * 25m)
 
-CodeCademy Learn Swift(https://www.codecademy.com/learn/learn-swift) {
-  Swift Intro: https://www.codecademy.com/courses/learn-swift/lessons/swift-hello-world/exercises/introduction
-  Hello World: https://www.codecademy.com/courses/learn-swift/lessons/swift-hello-world/exercises/print
-  Comments: https://www.codecademy.com/courses/learn-swift/lessons/swift-hello-world/exercises/comments
+Udemy iOS 13 Xcode 11 & Swift 5: https://www.udemy.com/course/how-to-make-an-iphone-app-course-xcode-11-swift-5-ios-13/{
+    Section 1 Welcome to the Course
+    Xcode Tour
+    Variables and Constants
+    Strings and Ints
+    Visual Design and Labels
+   
+    }
+   
+       Use minimalist design decisions that naturally lead to cross device compatibility
 
-    //A single line comment will comment out a single line and is denoted by two forward slashes // preceding it
-    //Print hello, world! in the console using the following syntax:
-    print("Hello, world!")
+--------------------------------
+3.2.20  9:30AM - 11AM (2 * 25m)
 
-    //😀
-    print("Codecademy")
-
-    /*
-    Multi-line comments like this
-    */
-    
-  Intro to Variables: https://www.codecademy.com/courses/learn-swift/lessons/swift-variables/exercises/introduction
-  Declare a Variable: https://www.codecademy.com/courses/learn-swift/lessons/swift-variables/exercises/declare
-  Arithmetic Operators: https://www.codecademy.com/courses/learn-swift/lessons/swift-variables/exercises/arithmetic
-  Compound Assignment Operators: https://www.codecademy.com/courses/learn-swift/lessons/swift-variables/exercises/compound-assignment-operators
-  Variable Types: https://www.codecademy.com/courses/learn-swift/lessons/swift-variables/exercises/type
-  String Interpolation: https://www.codecademy.com/courses/learn-swift/lessons/swift-variables/exercises/string-interpolation
-  
-    var interpolator = 17
-    print("Daniel Johnston made \(interpolator) studio albums.")
-
-Challenge Temperature: https://www.codecademy.com/courses/learn-swift/lessons/swift-variables/exercises/challenge-temperature
-  
-    Variables Constants: https://www.codecademy.com/courses/learn-swift/lessons/swift-variables/exercises/constants
-    var tempf: Double = 34
-    var tempc: Double
-    tempc = (tempf - 32) / 1.8
-    print("The temp is /(tempc) degrees Celsius")
-
-Challenge Body Mass Index: https://www.codecademy.com/courses/learn-swift/lessons/swift-variables/exercises/review
-    
-    var weight: Int = 185
-    var height: Int = 66
-    var bmi = weight * (height * height)
-    
-  
-}
-    
-
-Kilo Loco Videos {
-    How To Get The Most Out Of Tutorials As A Programmer: https://www.youtube.com/watch?v=BVgNs-uGOy4
-    Create a repository of code that builds upon itself as you complete tutorials one by one.
-}
-
-
+Udemy iOS 13 Xcode 11 & Swift 5: https://www.udemy.com/course/how-to-make-an-iphone-app-course-xcode-11-swift-5-ios-13/{
+    Section 13 SwiftUI 
+    SwiftUI Basics
+    Arranging Views
+    Modifiers and Varieties
+    Moving Between Views
+    }
 
 --------------------------------
 3.1.20  9:30AM - 11AM (3 * 25m)
@@ -155,46 +135,57 @@ CodeCademy Learn Swift(https://www.codecademy.com/learn/learn-swift) {
     } else {
       userIsLoggedin = false
     }
-
 }
 
---------------------------------
-3.2.20  9:30AM - 11AM (2 * 25m)
 
-Udemy iOS 13 Xcode 11 & Swift 5: https://www.udemy.com/course/how-to-make-an-iphone-app-course-xcode-11-swift-5-ios-13/{
-    Section 13 SwiftUI 
-    SwiftUI Basics
-    Arranging Views
-    Modifiers and Varieties
-    Moving Between Views
-    }
+--------------------------------
+2.29.20  2PM - 4PM (3 * 25m)
+
+CodeCademy Learn Swift(https://www.codecademy.com/learn/learn-swift) {
+  Swift Intro: https://www.codecademy.com/courses/learn-swift/lessons/swift-hello-world/exercises/introduction
+  Hello World: https://www.codecademy.com/courses/learn-swift/lessons/swift-hello-world/exercises/print
+  Comments: https://www.codecademy.com/courses/learn-swift/lessons/swift-hello-world/exercises/comments
+
+    //A single line comment will comment out a single line and is denoted by two forward slashes // preceding it
+    //Print hello, world! in the console using the following syntax:
+    print("Hello, world!")
+
+    //😀
+    print("Codecademy")
+
+    /*
+    Multi-line comments like this
+    */
     
---------------------------------
-3.3.20  9PM - 10PM (2 * 25m)
+  Intro to Variables: https://www.codecademy.com/courses/learn-swift/lessons/swift-variables/exercises/introduction
+  Declare a Variable: https://www.codecademy.com/courses/learn-swift/lessons/swift-variables/exercises/declare
+  Arithmetic Operators: https://www.codecademy.com/courses/learn-swift/lessons/swift-variables/exercises/arithmetic
+  Compound Assignment Operators: https://www.codecademy.com/courses/learn-swift/lessons/swift-variables/exercises/compound-assignment-operators
+  Variable Types: https://www.codecademy.com/courses/learn-swift/lessons/swift-variables/exercises/type
+  String Interpolation: https://www.codecademy.com/courses/learn-swift/lessons/swift-variables/exercises/string-interpolation
+  
+    var interpolator = 17
+    print("Daniel Johnston made \(interpolator) studio albums.")
 
-Udemy iOS 13 Xcode 11 & Swift 5: https://www.udemy.com/course/how-to-make-an-iphone-app-course-xcode-11-swift-5-ios-13/{
-    Section 1 Welcome to the Course
-    Xcode Tour
-    Variables and Constants
-    Strings and Ints
-    Visual Design and Labels
-   
-    }
-   
-       Use minimalist design decisions that naturally lead to cross device compatibility
+Challenge Temperature: https://www.codecademy.com/courses/learn-swift/lessons/swift-variables/exercises/challenge-temperature
+  
+    Variables Constants: https://www.codecademy.com/courses/learn-swift/lessons/swift-variables/exercises/constants
+    var tempf: Double = 34
+    var tempc: Double
+    tempc = (tempf - 32) / 1.8
+    print("The temp is /(tempc) degrees Celsius")
 
-   
-   
---------------------------------
-3.7.20  8AM - 9AM (2 * 25m)
+Challenge Body Mass Index: https://www.codecademy.com/courses/learn-swift/lessons/swift-variables/exercises/review
+    
+    var weight: Int = 185
+    var height: Int = 66
+    var bmi = weight * (height * height)
+    
+  
+}
+    
 
-!Had trouble with tying storyboard elements  to a view controller.
-
-
-Udemy iOS 13 Xcode 11 & Swift 5: https://www.udemy.com/course/how-to-make-an-iphone-app-course-xcode-11-swift-5-ios-13/{
-    Outlets & Errors
-    Buttons & Action
-    }
-
-Outlets are connections between storyboard and view controller; Representation of something frmo the storyboard
-Action is when that object does some thing when interacted with
+Kilo Loco Videos {
+    How To Get The Most Out Of Tutorials As A Programmer: https://www.youtube.com/watch?v=BVgNs-uGOy4
+    Create a repository of code that builds upon itself as you complete tutorials one by one.
+}
