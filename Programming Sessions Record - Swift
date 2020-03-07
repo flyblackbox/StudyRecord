@@ -178,7 +178,23 @@ Udemy iOS 13 Xcode 11 & Swift 5: https://www.udemy.com/course/how-to-make-an-iph
     Variables and Constants
     Strings and Ints
     Visual Design and Labels
-    
-    Use minimalist design decisions that naturally lead to cross device compatibility
-
+   
     }
+   
+       Use minimalist design decisions that naturally lead to cross device compatibility
+
+   
+   
+--------------------------------
+3.7.20  8AM - 9AM (2 * 25m)
+
+!Had trouble with tying storyboard elements  to a view controller.
+
+
+Udemy iOS 13 Xcode 11 & Swift 5: https://www.udemy.com/course/how-to-make-an-iphone-app-course-xcode-11-swift-5-ios-13/{
+    Outlets & Errors
+    Buttons & Action
+    }
+
+Outlets are connections between storyboard and view controller; Representation of something frmo the storyboard
+Action is when that object does some thing when interacted with
